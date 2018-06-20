@@ -34,3 +34,7 @@ To actually use this you'll probably want some macros like:
 @end
 
 ```
+
+
+I haven't been able to get recording mode to work, but it should be enabled by setting the environment variable `VTK_RECORD_MODE` for a test run.
+As a workaround, it's not too difficult to copy the images produced during a test run (visible in the test results view) back to the source directory so that they can be added to the test bundle at the appropriate path.
