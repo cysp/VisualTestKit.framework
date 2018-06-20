@@ -1,0 +1,6 @@
+framework module VisualTestKit {
+  umbrella header "VisualTestKit.h"
+
+  export *
+  module * { export * }
+}

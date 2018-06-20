@@ -1,0 +1,11 @@
+--- !tapi-tbd-v3
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 6B2FEE36-0E17-3892-8C93-8D0213A72761' ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/VisualTestKit.framework/VisualTestKit
+objc-constraint: none
+exports:
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _NSStringFromVTKAssertID, _VTKID, ___VTKAssertView, ___VTKSetReferenceImagesDirectory ]
+    objc-classes:    [ VTKAssertID ]
+...
