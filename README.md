@@ -27,8 +27,13 @@ To actually use this you'll probably want some macros like:
 }
 
 - (void)testSomeAspect {
-    UIView * const view = …;
-    STVTKAssertView(view, @"SomeAspect", VTKAssertIDDecorationScreenScale|VTKAssertIDDecorationContentSizeCategory);
+    UIView * const view = /* … */;
+
+    if (@available(iOS 12.0, *)) {
+        STVTKAssertView(view, @"SomeAspect", VTKAssertIDDecorationScreenScale|VTKAssertIDDecorationContentSizeCategory);
+    } else {
+        XCTFail();
+    }
 }
 
 @end
