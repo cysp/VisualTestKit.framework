@@ -2,7 +2,9 @@
 
 This is a text-based dylib that will allow linking against the new private `VisualTestKit.framework` in iOS12. :grinning:
 
-To actually use this you'll probably want some macros like:
+I've made [a simple example project](https://github.com/cysp/VisualTestKitExample) that demonstrates how to use the framework.
+
+For use from Objective-C you'll probably want some macros like:
 ```objc
 #define STVTKSetReferenceImagesDirectory(_path) __VTKSetReferenceImagesDirectory((_path), self)
 
